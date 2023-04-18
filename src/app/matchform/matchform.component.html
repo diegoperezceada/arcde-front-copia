@@ -1,0 +1,11 @@
+<div class="text_screen">
+    <form action="post" (ngSubmit)="submit()">
+        <input type="number" id="nombre" name="name" [(ngModel)]="datos.score1" placeholder="Score1"><br>
+        <input type="number"  id="tel" name="tel" [(ngModel)]="datos.score2" pattern="[0-9]{9}" placeholder="Score2" ><br>
+        <input type="text" id="number" [(ngModel)]="datos.winner_id" name="fname" placeholder="Winner"><br>
+
+        <button  type="submit">Crear resultado</button>
+
+        <h1 class="h1form"><a href="#" routerLink="/login" name="_method"  value="PUT">Volver</a></h1>
+    </form> 
+</div>

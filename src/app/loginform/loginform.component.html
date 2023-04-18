@@ -1,0 +1,10 @@
+<div class="text_screen">
+    <form action="post" (ngSubmit)="submit()">
+        <input type="text" id="nombre" name="name" [(ngModel)]="datos.name" placeholder="Nombre" required="true"><br>
+        <input type="tel"  id="tel" name="tel" [(ngModel)]="datos.telephone" pattern="[0-9]{9}" placeholder="Teléfono" ><br>
+        <input type="password" id="password" [(ngModel)]="datos.password" name="fname" placeholder="Contraseña"><br>
+        <input type="submit" value="Enviar">
+        <h1 class="h1form"><a href="#" routerLink="/login">Volver</a></h1>
+    </form> 
+</div>
+

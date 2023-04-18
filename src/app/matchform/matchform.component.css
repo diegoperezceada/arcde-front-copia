@@ -1,0 +1,22 @@
+label{
+    background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+
+}
+
+input{
+    border-radius: 20px;
+    background-color: transparent;
+    background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 15px;
+    margin-top: 2vh;
+}
+
+.h1form{
+    margin-top: 1vh;
+    font-size: 15px;
+    border-radius: 1px;
+}

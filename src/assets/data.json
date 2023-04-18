@@ -1,0 +1,12 @@
+games = [
+    {id: 1, title: "Street Fighter 2", url: "https://upload.wikimedia.org/wikipedia/en/0/00/SF2_JPN_flyer.jpg"},
+    {id: 2, title: "Mortal Kombat 2", url: "https://upload.wikimedia.org/wikipedia/en/f/f1/Mortal_Kombat_II_Flyer.png"},
+    {id: 3, title: "King of Fighters 98", url: "https://upload.wikimedia.org/wikipedia/en/4/4c/Kof98box.jpg"},
+    {id: 4, title: "Soccer Brawl", url: "https://www.mobygames.com/images/shots/l/920483-soccer-brawl-neo-geo-screenshot-the-player-select-screen.png"},
+    {id: 5, title: "Windjammers", url: "https://www.giantbomb.com/a/uploads/scale_small/2/28062/2822916-01.jpg"},
+    {id: 6, title: "Super Sidekicks 3", url: "https://www.giantbomb.com/a/uploads/scale_small/0/5251/1288607-supersidekicks3.jpg"},
+    {id: 7, title: "Tetris", url: "https://www.giantbomb.com/a/uploads/scale_small/8/87790/1800733-tetris_nes_box.jpg"},
+    {id: 8, title: "Marvel vs Capcom", url: "https://www.giantbomb.com/a/uploads/scale_small/0/108/2458022-mvc.jpg"},
+    {id: 9, title: "X-Men vs Street Fighter", url: "https://www.giantbomb.com/a/uploads/scale_small/0/6373/2438203-xvssf.jpg"},
+    {id: 10, title: "Puzzle Bobble", url: "https://www.giantbomb.com/a/uploads/scale_small/0/1439/2457228-puzzlebobble.jpg"}
+];

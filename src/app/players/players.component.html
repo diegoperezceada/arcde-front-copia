@@ -1,0 +1,39 @@
+<form #contactForm="ngForm">
+
+  <div class="text_screen" >
+
+    <ngb-carousel class="slider" [(ngModel)]="data_player.game_id" [ngModelOptions]="{standalone: true}">
+      <ng-template ngbSlide *ngFor="let img of imageUrl" >
+          <div class="picsum-img-wrapper" >
+              <img class="img1" src={{img.url}}  />
+          </div>
+          <div class="carousel-caption">
+              <p   class="sf2" >{{img.title}}</p>
+          </div>
+      </ng-template>
+  </ngb-carousel>
+
+  
+      <select class="select1" style="padding: 10px;"  [(ngModel)]="data_player.player1_id" name="fieldName" ngDefaultControl [ngModelOptions]="{standalone: true}">
+        <option [ngValue]="null"  >Player 1</option>
+        <option  *ngFor="let img of user_names" [ngValue]="img">{{img.name}}</option>
+      </select>
+
+        <select class="select2" style="padding: 10px;" selected="" [(ngModel)]="data_player.player2_id" [ngModelOptions]="{standalone: true}">
+          <option [ngValue]="null" >Player 2</option>
+
+          <option  *ngFor="let img of user_names" [ngValue]="img">{{img.name}}</option>
+        </select>
+
+        <select class="select2" style="padding: 10px;" selected="" [(ngModel)]="data_player.game_id" [ngModelOptions]="{standalone: true}">
+          <option [ngValue]="null" >Game</option>
+
+          <option  *ngFor="let img of imageUrl" [ngValue]="img">{{img.title}}</option>
+        </select>
+        
+
+        <h1 class="h1form" (click)="enviardatos()">Continuar</h1>
+
+  </div>
+</form>
+

@@ -1,0 +1,15 @@
+
+
+
+table{
+
+    margin-top: -100px;
+    
+}
+th, td{
+    background-color: transparent;
+    background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 9px;
+}
