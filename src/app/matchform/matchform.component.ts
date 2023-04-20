@@ -41,7 +41,12 @@ export class MatchformComponent {
    this.id = this.routes.snapshot.paramMap.get('id');
   }
   
-  
+  ngOnInit() {
+
+    let perfil = localStorage.getItem('datitos')
+    console.log(perfil)
+
+  }
  
   submit(){
 

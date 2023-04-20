@@ -16,24 +16,41 @@ export class ResultadoComponent {
     game_id: '',
     player1_id: '',
     player2_id: '',
-    nombre:'',
-
+    user_name:'',
+    local: localStorage,
+    
   };
-
+  
   game = {
-
+    
     name:''
-
+    
   }
   public table: any[] = [];
-
+  
   public games: any[] = [];
-
-
+  
+  
+  
+  
+  
   constructor(private http: HttpClient, private  router: Router) {}
-
+  
   ngOnInit() {
+    const jugadorString = localStorage.getItem('datitos');
 
+    if (jugadorString !== null) {
+      const jugador = JSON.parse(jugadorString);
+      const nombreJugador = jugador.name;
+
+      console.log(jugador.name)
+    }
+    else{
+      console.log("dnedwub")
+    }
+    let resultado = Object.values(localStorage).filter((valor, indice) => indice === 1);
+
+  
     this.http.get(`${environment.apiEndpoint}/games`).subscribe((data: any) => {
       this.games = data;
     })
@@ -41,6 +58,7 @@ export class ResultadoComponent {
 
     this.http.get(`${environment.apiEndpoint}/matchs`).subscribe((data: any) => {
       this.table = data;
+      console.log(this.table)
     });
     
   }

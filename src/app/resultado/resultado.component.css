@@ -1,15 +1,36 @@
 
-
-
-table{
-
-    margin-top: -100px;
-    
+.text_screen{
+    height: 500px;
+    width:  470px;
+    overflow: scroll;
+    margin-top: 50px;
 }
+
 th, td{
     background-color: transparent;
     background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 9px;
+    font-size: 12px;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) {
+    .text_screen{
+        height: 300px;
+        width: 385px;
+        overflow: scroll;
+        
+        margin-left: -370px;
+    }
+    
+
+    th, td{
+        background-color: transparent;
+        background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 9px;
+    }
+}
+

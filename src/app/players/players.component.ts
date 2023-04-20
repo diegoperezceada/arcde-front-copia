@@ -17,13 +17,14 @@ export class PlayersComponent {
     player1_id: null,
     player2_id:null,
     game_id:null,
-    
   };
   
     datos = {
     game_id: '',
     title: '',
     url: '',
+
+
   
   };
 
@@ -36,7 +37,16 @@ export class PlayersComponent {
   
   ngOnInit() {
     this.http.get(`${environment.apiEndpoint}/users`).subscribe((data: any) => {
-      this.user_names = data;
+      console.log(data);
+      this.user_names = data.map((element:any)=>{
+        let objet = {
+          id: element.id,
+          name: element.name
+        }
+        return objet;
+        
+      });
+      console.log(this.user_names)
     });
     
     this.http.get(`${environment.apiEndpoint}/games`).subscribe((data: any) => {
@@ -51,7 +61,7 @@ export class PlayersComponent {
 
       player1_id: this.data_player.player1_id ? this.data_player.player1_id['id'] : [],
       player2_id: this.data_player.player2_id ? this.data_player.player2_id['id'] : [],
-      game_id: this.data_player.game_id ? this.data_player.game_id['game_id']: []
+      game_id: this.data_player.game_id ? this.data_player.game_id['game_id']: [],
 
     }
 
@@ -59,7 +69,6 @@ export class PlayersComponent {
       console.log(respuesta)
       this.click(respuesta.id)
     })
-
 
   }
 
@@ -70,7 +79,7 @@ export class PlayersComponent {
 
   click(id: number){
 
-    localStorage.setItem('datitos', JSON.stringify(this.data_player))
+    localStorage.setItem('datitos', JSON.stringify(this.user_names))
     console.log(localStorage)
     this.router.navigateByUrl('/matchform/'+id);
   }

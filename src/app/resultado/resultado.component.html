@@ -1,5 +1,5 @@
 <div class="text_screen">
-    <table class="table">
+    <table class="table" >
         <thead>
           <tr >
             <th scope="col" >Juego</th>
@@ -11,8 +11,7 @@
         <tbody>
           <tr *ngFor="let img of table">
             <td>{{img.game_id}}</td>
-            <td>Diego
-              Mario</td>
+            <td>{{img.local}}VS </td>
             <td>{{img.score1}}-{{img.score2}}</td>
           </tr>
           

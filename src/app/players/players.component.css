@@ -1,12 +1,10 @@
 .select1{
-    width: 250px;
+    width: 150px;
     border-radius: 20px;
     border-color: rgb(255, 255, 255);
     text-align: center;
-
-    margin-left: -40px;
-    margin-right: 20px;
-    margin-top: 200px;
+    
+    margin-top: 150px;
     font-family: 'Press Start 2P', cursive;
     background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
     -webkit-background-clip: text;
@@ -20,13 +18,12 @@
 }
 
 .select2{
-    width: 250px;
+    width: 150px;
     border-radius: 20px;
-    margin-left: -60px;
+  
     border-color: rgb(255, 255, 255);
     text-align: center;
 
-    position: relative;
 
 
     font-family: 'Press Start 2P', cursive;
@@ -50,9 +47,8 @@ h1{
 .slider{
     position: absolute;
     height: 400px;
-    width: 300px;
-    margin-top: -200px;
-    margin-left: -15px;
+    width: 400px;
+    margin-top: -250px;
 }
 
 .picsum-img-wrapper{
@@ -76,4 +72,90 @@ img{
     margin-top: 2vh;
     -webkit-text-stroke: 1.1px rgb(5, 112, 212);
     color: transparent;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 576px) { 
+
+    .select1{
+        width: 250px;
+        border-radius: 20px;
+        border-color: rgb(255, 255, 255);
+        text-align: center;
+    
+        margin-left: -40px;
+        margin-right: 20px;
+        margin-top: 200px;
+        font-family: 'Press Start 2P', cursive;
+        background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+    
+    .select1 option{
+        background-color: black;
+        color: darkred;
+    }
+    
+    .select2{
+        width: 250px;
+        border-radius: 20px;
+        margin-left: -60px;
+        border-color: rgb(255, 255, 255);
+        text-align: center;
+    
+        position: relative;
+    
+    
+        font-family: 'Press Start 2P', cursive;
+        background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    
+    .select2  option{
+        background-color: black;
+        color: darkred;
+    }
+    
+    
+    h1{
+        font-size: 18px;
+        margin-top: 50px;
+        margin-left:50px ;
+    }
+    
+    .slider{
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        margin-top: -200px;
+        margin-left: -15px;
+    }
+    
+    .picsum-img-wrapper{
+        height: 300px;
+        margin-top: 100px;
+    
+    }
+    
+    img{
+        width: 250px;
+        padding: 40px;
+    
+    }
+    
+    .sf2{
+        background-color: transparent;
+        background: linear-gradient(rgb(241, 0, 0, 1),rgb(218, 222, 1, 1));
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 20px;
+        margin-top: 2vh;
+        -webkit-text-stroke: 1.1px rgb(5, 112, 212);
+        color: transparent;
+    }
+
+
 }
