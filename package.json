@@ -8,9 +8,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npm run build-prod && npm run clean && npm run copy",
-    "build-prod": "arcade build --prod",
-    "clean": "rimraf ../arcade_backcode/public/*.js ../arcade_backcode/public/*.css ../arcade_backcode/public/*.html  ../arcade_backcode/public/3rdpartylicenses.txt ../arcade_backcode/public/assets ../arcade_backcode/public/svg",
-    "copy": "copyfiles -u 1 \"./www/**/*\" \"../arcade_backcode/public/\""
+    "build-prod": "ng build --configuration production",
+    "clean": "rimraf ../arcade_backCode/public/*.js ../arcade_backCode/public/*.css ../arcade_backCode/public/*.html  ../arcade_backCode/public/3rdpartylicenses.txt ../arcade_backCode/public/assets ../arcade_backCode/public/svg",
+    "copy": "copyfiles -u 2 \"./dist/arcade/**/*\" \"../arcade_backCode/public/\""
   },
   "private": true,
   "dependencies": {
@@ -27,6 +27,7 @@
     "@ngx-translate/http-loader": "^7.0.0",
     "@popperjs/core": "^2.11.6",
     "bootstrap": "^5.2.3",
+    "copyfiles": "^2.4.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
