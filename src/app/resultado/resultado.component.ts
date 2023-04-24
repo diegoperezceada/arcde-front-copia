@@ -17,7 +17,7 @@ export class ResultadoComponent {
     player1_id: '',
     player2_id: '',
     user_name:'',
-    local: localStorage,
+    local:localStorage,
     
   };
   
