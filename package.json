@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npm run build-prod && npm run clean && npm run copy",
+    "build-prod": "arcade build --prod",
+    "clean": "rimraf ../arcade_backcode/public/*.js ../arcade_backcode/public/*.css ../arcade_backcode/public/*.html  ../arcade_backcode/public/3rdpartylicenses.txt ../arcade_backcode/public/assets ../arcade_backcode/public/svg",
+    "copy": "copyfiles -u 1 \"./www/**/*\" \"../arcade_backcode/public/\""
   },
   "private": true,
   "dependencies": {

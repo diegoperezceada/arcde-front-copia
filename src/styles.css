@@ -23,7 +23,7 @@ body{
 }
 .screen{
     width: 50em;
-    height: 500px;
+    height: 100%;
 }
 
 .text_screen{
