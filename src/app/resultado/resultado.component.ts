@@ -17,7 +17,6 @@ export class ResultadoComponent {
     player1_id: '',
     player2_id: '',
     user_name:'',
-    local:localStorage,
     
   };
   
@@ -32,13 +31,15 @@ export class ResultadoComponent {
   
   
   
-  
+  public datass: any[] =[];
   
   constructor(private http: HttpClient, private  router: Router) {}
   
   ngOnInit() {
     const jugadorString = localStorage.getItem('datitos');
 
+
+    this.datass.push(jugadorString)
     if (jugadorString !== null) {
       const jugador = JSON.parse(jugadorString);
       const nombreJugador = jugador.name;
